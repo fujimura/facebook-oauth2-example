@@ -1,0 +1,4 @@
+development:
+  id: "your app id"
+  secret: "your app secret"
+  callback_url: "http://localhost:3000/auth/callback"

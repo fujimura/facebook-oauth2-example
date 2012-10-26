@@ -1,0 +1,38 @@
+Name:                   facebook-oauth2-example
+Version:                0.0.0
+Author:                 Fujimura Daisuke
+Maintainer:             Fujimura Daisuke
+-- FIXME
+License:                BSD3
+License-File:           LICENSE
+Synopsis:               Facebook OAuth2 Example
+Description:            Facebook OAuth2 Example
+Category:               Web
+Cabal-Version:          >= 1.6
+Build-Type:             Simple
+Data-Files:             views/home.mustache
+Executable facebook-oauth2-example
+  Main-Is:              Main.hs
+  GHC-Options:          -Wall
+  Build-Depends:        base >= 4.0 && < 5
+                      , aeson
+                      , bytestring
+                      , hastache
+                      , http-types
+                      , http-conduit
+                      , mtl
+                      , hoauth2
+                      , scotty
+                      , text
+                      , unordered-containers
+                      , utf8-string
+                      , wai
+                      , wai-extra
+                      , wai-middleware-static
+                      , yaml
+  Other-Modules:        App
+                        Config
+                        Facebook
+Source-Repository head
+  Type:                 git
+  Location:             git://github.com/fujimura/facebook-oauth2-example.git
